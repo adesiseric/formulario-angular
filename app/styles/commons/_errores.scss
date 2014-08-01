@@ -1,0 +1,73 @@
+// ERROR GLOBO
+.errorValidacion, .errorValidacion.v06 {
+    font-size: 12px;
+    width: 245px;
+    bottom: 0px;
+    left: 0;
+    position: absolute;
+    outline: none;
+    z-index: 100192;
+    color: #C4136C;
+}
+
+.errorValidacion .validacionInterior,
+.errorValidacion.v06 .validacionInterior {
+    -webkit-box-shadow: inset 0 2px 2px #edd8e3;
+    box-shadow: inset 0 2px 2px #edd8e3;
+    background-color: #F7E9E9;
+    border: 1px solid #f4ccdf;
+    color: #c4136c;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.errorValidacion .puntero,
+.errorValidacion.v06 .puntero {
+    margin-top: -1px;
+    height: 10px;
+    display: block;
+    background: url("../images/ico-alerta-cursor.png") no-repeat center bottom;
+}
+
+.errorValidacion {
+    div.validacionInterior {
+        p.titulo {
+            color: #c4136c;
+            font-size: 18px;
+            margin: 0;
+            padding: 10px 0 5px;
+            font-style: normal;
+            em {
+                padding-top: .4em;
+                padding-left: 1.8em;
+                background: url("../images/ico-spriteAlertaInformacion16.png") no-repeat 0 0;
+                font-style: normal;
+                font-size: 12px;
+            }
+        }
+    }
+    .textoGestionable {
+        p {
+            color: #c4136c;
+            font-family: arial;
+            margin: 0;
+            padding: 0 0 5px;
+            line-height: 14px;
+        }
+    }
+}
+
+
+// ERROR INPUTS, SELECTS, TEXTAREAS
+
+input.form-control, select.form-control, textarea.form-control {
+    &.ng-invalid-pattern,
+    &.ng-dirty.ng-invalid-required,
+    &.ng-invalid-date {
+        -webkit-box-shadow: inset 0 1px 1px #F5C8C6, 0 0px 8px #f8b9b7;
+        box-shadow: inset 0 1px 1px #F5C8C6, 0 0px 8px #f8b9b7;
+        background-color: #FAF2F2;
+        border-color: #F8B2D5;
+        color: #C4126C;
+    }
+}

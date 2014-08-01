@@ -1,0 +1,26 @@
+@include anchos();
+
+@include font-size();
+@include margin-top();
+@include margin-bottom();
+@include margin-right();
+@include margin-left();
+
+.text-blue {
+    color: #0078D2;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.obligatorio {
+    background-color: #ffffd2;
+}
+
+hr.dashed {
+    border-style: dashed;
+    &.info {
+        border-color: #31708f;
+    }
+}

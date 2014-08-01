@@ -1,0 +1,14 @@
+<p class="text-right margin-right-5 margin-top-5">
+    <a href="" class="font-size-13 text-info" ng-click = "__ocultarModal()">
+        <span class="glyphicon glyphicon-remove-circle"></span>
+    </a>
+</p>
+
+<h3 class="page-header">Template dentro de una modal</h3>
+<p class="text-left" ng-repeat="fila in formulario.arrayEjemplo">
+    <span>{{fila.texto}}</span>
+</p>
+
+<div class="row margin-right-15">
+    <button class="btn btn-info pull-right" ng-click = "__ocultarModal()">Cerrar Modal</button>
+</div>

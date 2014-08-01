@@ -1,0 +1,55 @@
+$px: px;
+
+@mixin anchos() {
+    $i: 800;
+
+    @while $i > 0 {
+        .w#{$i} { width: $i + $px; }
+        $i: $i - 1;
+    }
+}
+
+@mixin font-size() {
+    $i: 30;
+
+    @while $i > 0 {
+        .font-size-#{$i} { font-size: $i + $px }
+        $i: $i - 1;
+    }
+}
+
+@mixin margin-bottom() {
+    $i: 20;
+
+    @while $i > 0 {
+        .margin-bottom-#{$i} { margin-bottom: $i + $px }
+        $i: $i - 1
+    }
+}
+
+@mixin margin-top() {
+    $i: 20;
+
+    @while $i > 0 {
+        .margin-top-#{$i} { margin-top: $i + $px }
+        $i: $i - 1
+    }
+}
+
+@mixin margin-left() {
+    $i: 20;
+
+    @while $i > 0 {
+        .margin-left-#{$i} { margin-left: $i + $px }
+        $i: $i - 1
+    }
+}
+
+@mixin margin-right() {
+    $i: 20;
+
+    @while $i > 0 {
+        .margin-right-#{$i} { margin-right: $i + $px }
+        $i: $i - 1
+    }
+}

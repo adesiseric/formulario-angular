@@ -1,0 +1,27 @@
+<div class="fondo-modal" ng-show = "modal.show"></div>
+<div class="marco-modal" ng-show = "modal.show">
+    <div class="contenedor-modal">
+        <p class="text-right margin-right-5 margin-top-5" ng-show = "modal.type == 'ERROR'">
+            <a href="" class="font-size-13 text-danger" ng-click = "__ocultarModal()">
+                <span class="glyphicon glyphicon-remove-circle"></span>
+            </a>
+        </p>
+
+        <div class="loading" ng-show = "modal.type == 'LOADING'">
+            <img ng-src="images/ico-modal-cargando.gif">
+        </div>
+
+        <div class="error" ng-show = "modal.type == 'ERROR'">
+            <p class="text-danger font-size-18">
+                <span class="glyphicon glyphicon-exclamation-sign"></span>
+                <em><strong>Error</strong></em>
+            </p>
+            <p class="text-danger font-size-13"><span>{{modal.msg}}</span></p>
+        </div>
+
+        <div class="template" ng-show = "modal.type == 'TEMPLATE'">
+            <div ng-include src = "modal.template"></div>
+        </div>
+
+    </div>
+</div>
