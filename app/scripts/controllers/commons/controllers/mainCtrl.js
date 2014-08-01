@@ -118,7 +118,7 @@
 
     }
 
-    angular.module('formsAngularApp')
+    angular.module('commonControllers', [])
     .controller('MainCtrl', ['$scope', mainCtrl]);
 
 })();

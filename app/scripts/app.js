@@ -23,7 +23,8 @@
         'ngSanitize',
         'ngTouch',
         'ui.utils',
-        'commonDirectives'
+        'commonDirectives',
+        'commonControllers'
     ]).config(config);
 
 })();
